@@ -1,6 +1,6 @@
 $(document).ready(function() { /* executa as funções quando o documento estiver pronto */
     $('header button').click(function() { /* expande o menu ao clicar no botão 'nova imagem' */
-        $('form').slideDown();
+        $('form').slideToggle();
     })
 
     $('#botaoCancelar').click(function() { /* retrai o menu ao clicar no botão 'cancelar' */
@@ -20,9 +20,5 @@ $(document).ready(function() { /* executa as funções quando o documento estive
         $(novoItem).appendTo('ul'); /* insere a imagem na lista */
         $(novoItem).fadeIn(1000); /* adiciona o efeito de transição à função de adicionar a imagem (1000 é o tempo de transição em ms */
         $('#endImgNova').val(''); /* limpa o formulario */
-
     })
-
-
-
 })

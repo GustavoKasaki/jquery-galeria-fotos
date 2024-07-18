@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    padding: 16px 0;
+    color: white;
+    display: flex;
+    border-bottom: 16px solid cyan;
+}
+
+header button {
+    margin-left: 16px;
+}
+
+form {
+    background-color: lightgray;
+    text-align: center;
+    padding: 24px 0;
+    display: none;
+}
+
+form h2 {
+    font-size: 24px;
+}
+
+input,
+button {
+    padding: 8px;
+}
+
+button {
+    background-color: lightgreen;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+}
+
+#botaoCancelar {
+    background-color: red;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li {
+    max-width: 25%;
+    list-style: none;
+    position: relative;
+    max-height: 200px;
+    overflow-y: hidden;
+}
+
+ul li img {
+    width: 100%;
+}
+
+.overlayImgLink {
+    padding: 8px;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+}
+
+.overlayImgLink a {
+    color: white;
+    text-decoration: none;
+}
+
+ul li:hover .overlayImgLink {
+    opacity: 1;
+}
